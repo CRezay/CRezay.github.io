@@ -10,9 +10,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Testsoso,"> 
-    <meta name="description" content="We搞事搞事搞事搞事该死
+    <meta name="description" content="封装函数对任意函数去重——作者：王大锤
 测试文件测试文件封装函数对任意函数去重：
-12345678910111213141516171819202122&amp;lt;script&amp;gt;        // 语法：  ,"> 
+12345678910111213141516171819202122&amp;lt;script&amp;gt;        /,"> 
     <meta name="author" content="John Doe"> 
     <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -63,7 +63,7 @@
 
         </div>
         <div class="content markdown">
-            <p>We搞事搞事搞事搞事该死</p>
+            <p>封装函数对任意函数去重——作者：王大锤</p>
 <h2 id="测试文件测试文件"><a href="#测试文件测试文件" class="headerlink" title="测试文件测试文件"></a>测试文件测试文件</h2><p>封装函数对任意函数去重：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        // 语法：</span><br><span class="line">        // array.indexOf(item,start)</span><br><span class="line">        // 【注】</span><br><span class="line">        // item 必须。查找的元素</span><br><span class="line">        //start 可选的整数参数。规定在数组中开始检索的位置。</span><br><span class="line">        //start的合法取值为0到stringObject.lenght -1</span><br><span class="line">        function myFunction() &#123;</span><br><span class="line">            var hash = [];</span><br><span class="line">            for (var i = 0; i &lt; arguments.length; i++) &#123;</span><br><span class="line">                if (hash.indexOf(arguments[i]) == -1) &#123;</span><br><span class="line">                    //遍历要去重的数组，当值不在新数组的时候（indexOf为-1）</span><br><span class="line">                    hash.push(arguments[i]);</span><br><span class="line">                    //push()方法可向数组的末尾添加一个或多个元素并返回新的长度</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            return hash;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        var hash = myFunction(10, 10, 20, 21, 20, 1, 1, 2, 2);</span><br><span class="line">        console.log(hash);</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
